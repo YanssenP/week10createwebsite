@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 10</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  </head>
+  
+  <div class="text-bg-warning p-4">English Premier League Football</div>
+
+  <body class="container">
+
+    <br>
+    <div class="card">
+        <div class="card-body">
+            
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-Match">Football Fixtures</label>
+                        <input type="text" class="form-control" id="new-Home v Away" placeholder="Home V Away">
+
+                    </div>
+
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-match-date">Match Date</label>
+                        <input type="date" class="form-control" id="new-match-date">
+
+                    </div>
+
+                </div>
+     
+
+                    </div>
+
+                </div>
+            </div><br>
+            <div>
+                <button id="add" class="btn btn-success
+                
+            form-control">Create</button>
+            </div>
+        </div>
+
+    </div>
+    <table id="list" class="table table-dark table striped">
+        <tr>
+            <th>Home Team V Away Team</th>
+            <th>Match Date</th>
+
+        </tr>
+    </table>
+
+    
+    <script src="./week10.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
