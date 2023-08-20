@@ -5,15 +5,14 @@ document.getElementById('add').addEventListener('click', () => {
     let table = document.getElementById('list');
     let row = table.insertRow(1);
     row.setAttribute('id', `item-${id}`);
-    row.insertCell(0).innerHTML = document.getElementById('new-Match').value;
+    row.insertCell(0).innerHTML = document.getElementById('new-Home V Away').value;
     row.insertCell(1).innerHTML = `${createdDate.getFullYear()}-${createdDate.getMonth() + 1}-${createdDate.getDate()}`;
     row.insertCell(2).innerHTML = document.getElementById('new-Match-Date').value;
-    row.insertCell(3).innerHTML = document.getElementById('new-Location').value;
-    let actions = row.insertCell(4);
+
+    let actions = row.insertCell(3);
     actions.appendChild(createDeleteButton(id++));
-    document.getElementById('new-Match').value = '';
+    document.getElementById('new-Home V Away').value = '';
     document.getElementById('new-Match-Date').value = + '';
-    document.getElementById('new-Location').value = '';
 });
 
 function createDeleteButton(id) {
